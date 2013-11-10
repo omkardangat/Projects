@@ -1,0 +1,17 @@
+create database address_book;
+
+DROP TABLE IF EXISTS contacts;
+CREATE TABLE contacts (
+	first_name varchar(30) NOT NULL,
+	last_name varchar(30) NOT NULL,
+	email varchar(60) NOT NULL,
+	primary_phone bigint(20) unsigned NOT NULL,
+	city varchar(30) NOT NULL,
+	state varchar(30) NOT NULL,
+	zip int(10) unsigned NOT NULL,
+  	web_address varchar(100) DEFAULT NULL,
+  	secondary_phone bigint(20) unsigned DEFAULT NULL,
+  	street_address varchar(100) DEFAULT NULL,
+  	PRIMARY KEY (email),
+  	UNIQUE KEY address_book (first_name, last_name)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

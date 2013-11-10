@@ -1,0 +1,4 @@
+Please change the mysql parameters in DatabaseAccess class. DatabaseConnectionProperties is not working as expected.
+
+Example private String databaseConnectionProperties = "{\"database_name\" : \"your_database_name\", \"user_name\" : \"your_user_name\", \"password\" : \"your_password\", \"url\" : \"jdbc:mysql://localhost/\"}";
+
